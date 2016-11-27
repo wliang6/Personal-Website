@@ -1551,12 +1551,12 @@
 /* Basic */
 
 	body {
-		background: #fff;
+		background: #FFFFFF;
 		font-family: 'Source Sans Pro', sans-serif;
 		font-size: 19pt;
 		font-weight: 300;
 		line-height: 1.75em;
-		color: #888;
+		color: #FFFFFF;
 	}
 
 		body.is-loading * {
@@ -1575,13 +1575,16 @@
 		font-size: 19pt;
 		font-weight: 300;
 		line-height: 1.75em;
-		color: #888;
+		color: #FFFFFF;
 	}
 
-	h1, h2, h3, h4, h5, h6 {
+	h1, h2, h4, h5, h6 {
 		font-weight: 300;
-		color: #666;
+		color: #FFFFFF;
 		line-height: 1.5em;
+	}
+	h3{
+		color: #41484c;
 	}
 
 	h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
@@ -1590,7 +1593,7 @@
 	}
 
 		h1 a strong, h2 a strong, h3 a strong, h4 a strong, h5 a strong, h6 a strong {
-			color: #333;
+			color: #FFFFFF;
 		}
 
 	h2 {
@@ -1599,11 +1602,11 @@
 	}
 
 		h2.alt {
-			color: #888;
+			color: #FFFFFF;
 		}
 
 			h2.alt strong {
-				color: #666;
+				color: #FFFFFF;
 			}
 
 	h3 {
@@ -1624,7 +1627,7 @@
 
 	strong, b {
 		font-weight: 300;
-		color: #666;
+		color: #FFFFFF;
 	}
 
 	em, i {
@@ -1703,18 +1706,22 @@
 
 		.image img {
 			display: block;
-			width: 100%;
+			width:100%;
+			height:auto;
 		}
 
 		.image.avatar48 {
-			width: 80px;
-			height: 80px;
-			background: #f00;
+			width: 110px;
+			height: 110px;
+/*			background: #f00;*/
+			border-radius: 50%;
+
 		}
 
 			.image.avatar48 img {
-				width: 80px;
-				height: 80px;
+				width: 110px;
+				height: 110px;
+				border-radius: 50%;
 			}
 
 		.image.fit {
@@ -1799,7 +1806,7 @@
 		display: block;
 		border: 0;
 		outline: 0;
-		background: #fff;
+		background: #FFFFFF;
 		background: rgba(255, 255, 255, 0.75);
 		width: 100%;
 		border-radius: 0.35em;
@@ -1818,7 +1825,7 @@
 		form select:focus,
 		form textarea:focus {
 			box-shadow: 0 0 2px 1px #8ebebc;
-			background: #fff;
+			background: #555;
 		}
 
 	form input[type="text"],
@@ -1878,17 +1885,17 @@
 			table.default th {
 				text-align: left;
 				padding: 0.5em 1em 0.5em 1em;
-				color: #fff;
+				color: #FFFFFF;
 				background: #222729 url("images/overlay.png");
 			}
 
 			table.default thead {
 				background: #444;
-				color: #fff;
+				color: #FFFFFF;
 			}
 
 			table.default tfoot {
-				background: #eee;
+				background: #FFFFFF;
 			}
 
 /* Button */
@@ -1901,7 +1908,7 @@
 		position: relative;
 		display: inline-block;
 		border-radius: 0.35em;
-		color: #fff !important;
+		color: #FFFFFF !important;
 		text-decoration: none;
 		padding: 0.75em 2.5em 0.75em 2.5em;
 		background-color: #8ebebc;
@@ -1941,7 +1948,7 @@
 	}
 
 		.item header {
-			background: #fff;
+			background: #FFFFFF;
 			margin: 0;
 			padding: 1em 0 1em 0;
 			font-size: 0.8em;
@@ -1990,7 +1997,7 @@
 		justify-content: space-between;
 		background: #222629 url("images/overlay.png");
 		box-shadow: inset -0.25em 0 0.25em 0 rgba(0, 0, 0, 0.1);
-		color: #fff;
+		color: #FFFFFF;
 		height: 100%;
 		left: 0;
 		overflow-y: auto;
@@ -2013,6 +2020,7 @@
 			-ms-flex-shrink: 0;
 			flex-shrink: 0;
 			padding: 1.5em 0 0.75em 0;
+			background-image: url("../../images/pic03.jpg");
 		}
 
 			#header .bottom > :last-child {
@@ -2033,7 +2041,7 @@
 			}
 
 				#header .icons a:hover {
-					color: #fff;
+					color: #FFFFFF;
 				}
 
 	#logo {
@@ -2102,7 +2110,7 @@
 			#nav ul li a.active {
 				background: rgba(0, 0, 0, 0.15);
 				box-shadow: inset 0 0 0.25em 0 rgba(0, 0, 0, 0.125);
-				color: #fff;
+				color: #FFFFFF;
 			}
 
 				#nav ul li a.active span:before {
@@ -2114,7 +2122,7 @@
 	#footer {
 		margin-left: 375px;
 		text-align: center;
-		background-color: #dce3e2;
+		background-color: #121A1C;
 		padding: 3em 0 4em 0;
 		box-shadow: inset 0 1px 0 0 rgba(0, 0, 0, 0.05), inset 0 0.1em 0.1em 0 rgba(0, 0, 0, 0.025);
 		font-size: 0.8em;
@@ -2164,12 +2172,12 @@
 				}
 
 				#main > section.dark strong {
-					color: #fff;
+					color: #FFFFFF;
 					border-color: inherit;
 				}
 
 				#main > section.dark a {
-					color: #fff;
+					color: #FFFFFF;
 					border-color: inherit;
 				}
 
@@ -2184,25 +2192,24 @@
 			}
 
 			#main > section.one {
-				background-color: #81918E;
-				background-image: url("../../images/sunset.jpg");
-				opacity: 0.8;
+				background-color: #121A1C;
+				/*background-image: url("../../images/sunset.jpg");*/
 			}
 
 			#main > section.two {
-				background-color: #f5fafa;
+				background-color: #44515A;
 			}
 
 			#main > section.three {
-				background-color: #ecf1f1;
+				background-color: #121A1C;
 			}
 
 			#main > section.four {
-				background-color: #e8edec;
+				background-color: #44515A;
 			}
 
 			#main > section.five {
-				background-color: #f5fafa;
+				background-color: #121A1C;
 			}
 
 /* Wide */
@@ -2398,6 +2405,7 @@
 					padding-top: 2em;
 					margin-top: 2em;
 					position: relative;
+					bottom:0;
 				}
 
 			#logo {
@@ -2444,7 +2452,7 @@
 						-webkit-font-smoothing: antialiased;
 						-moz-osx-font-smoothing: grayscale;
 						content: '\f0c9';
-						color: #fff;
+						color: #FFFFF;
 						font-size: 18px;
 						line-height: 2.25em;
 						background: rgba(128, 136, 144, 0.5);
@@ -2519,6 +2527,7 @@
 
 			body, input, textarea, select {
 				font-size: 14pt;
+				color: #FFFFFF;
 			}
 
 			h2 {
